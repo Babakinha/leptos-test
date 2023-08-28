@@ -4,9 +4,9 @@ use leptos::*;
 pub fn Iteration(cx: Scope) -> impl IntoView {
     view! { cx,
         <h1> "Iteration" </h1>
-        <div style:display="flex" style:justify-content="center">
-            <div style:border="solid black" style:padding="10px" ><StaticList /></div>
-            <div style:border="solid black" style:padding="10px" ><DynamicList initial_len={2} /></div>
+        <div class="flex-centered">
+            <div class="lil-box"><StaticList /></div>
+            <div class="lil-box"><DynamicList initial_len={2} /></div>
         </div>
 
     }
