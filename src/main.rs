@@ -9,18 +9,22 @@ use iteration::Iteration;
 mod forms_and_inputs;
 use forms_and_inputs::FormsAndInputs;
 
+mod control_flow;
+use control_flow::ControlFlow;
+
 fn main() {
     mount_to_body(|cx| {
         view! { cx,
-            <div class="line" />
             <ComponentsAndProps />
-            <div class="line" />
+            <hr />
             <Iteration /> 
-            <div class="line" />
+            <hr />
             <FormsAndInputs />
-            <div class="line" />
+            <hr />
+            <ControlFlow />
+            <hr />
             <div style:height="1000px" />
-            <p>"I lov u haku ❤️"</p>
+            <p>"I love you ulyy ❤️"</p>
         }
     });
 }
